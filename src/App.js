@@ -1,4 +1,5 @@
 import './App.css';
+import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import {
   createBrowserRouter,
@@ -8,7 +9,7 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <div><Hero/></div>,
     errorElement: <div>Error</div>
   },
 ]);
