@@ -1,25 +1,56 @@
-import React from "react";
+import React, { useState } from "react";
+import Metamask from "../assets/logo/metamask.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  // handle connection to metamask
+  const [connectedToMeta, setConnectedToMeta] = useState(false);
+
   return (
-    <header className="text-gray-600 body-font md:px-16 px-6 w-full ">
+    <header className="text-gray-600 md:px-16 px-6 w-full">
       <div className="flex justify-between md:p-5 flex-col md:flex-row items-center">
         <div className="flex items-center text-gray-900 mb-4 md:mb-0">
-          <span className="ml-3 text-3xl font-bold">B.</span>
-        </div>
-        <div className="flex items-center relative">
-            <svg className="absolute ml-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><path d="M0 0h24v24H0z"/><path fill="#9f9f9f" d="M10.5 2a8.5 8.5 0 0 1 6.676 13.762l3.652 3.652a1 1 0 0 1-1.414 1.414l-3.652-3.652A8.5 8.5 0 1 1 10.5 2Zm0 2a6.5 6.5 0 1 0 0 13a6.5 6.5 0 0 0 0-13Zm0 1a5.5 5.5 0 1 1 0 11a5.5 5.5 0 0 1 0-11Z"/></g></svg>
-            <input type="text" placeholder="Search Posts" className="pl-10 outline-none bg-[#d2d2d2] px-4 py-2 rounded-xl md:min-w-[40vw]"/>
+          <Link to={'/'} className="ml-3 text-4xl font-bold">
+            B.
+          </Link>
         </div>
         <nav className="font-medium flex flex-wrap items-center text-base justify-center">
           <a className="mr-5 hover:text-gray-900 cursor-pointer">Explore</a>
           <a className="mr-5 hover:text-gray-900 cursor-pointer">Create Post</a>
           <a className="mr-5 hover:text-gray-900 cursor-pointer">My Post</a>
+          <a className="mr-5 hover:text-gray-900 cursor-pointer">
+            Transactions
+          </a>
           <a className="mr-5 hover:text-gray-900 cursor-pointer">About</a>
         </nav>
-        <button className="inline-flex items-center text-black bg-gray-100 border border-black py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 font-medium">
-          Connect Metamask
-        </button>
+        {!connectedToMeta ? (
+          <div className="flex flex-row-reverse cursor-pointer items-center max-md:pt-5">
+            <button
+              className={`items-center text-white bg-black border border-black py-1.5 pl-6 px-4 focus:outline-none hover:bg-gray-200 rounded-2xl text-base md:mt-0 font-medium max-md:hidden flex`}
+            >
+              Connect Metamask
+            </button>
+            <img
+              src={Metamask}
+              alt=""
+              className="md:-mr-4 max-md:absolute max-md:mr-3 max-md:mt-3 max-md:top-0 max-md:right-0 z-[100] h-10"
+            />
+          </div>
+        ) : (
+          // Need to change based on the connected account details
+          <div className="flex flex-row cursor-pointer items-center max-md:pt-5">
+            <button
+              className={`items-center text-white bg-black border border-black py-1.5 pr-6 px-4 focus:outline-none hover:bg-gray-200 rounded-2xl text-base md:mt-0 font-medium max-md:hidden flex`}
+            >
+              Connected
+            </button>
+            <img
+              src={Metamask}
+              alt=""
+              className="md:-ml-4 max-md:absolute max-md:mr-3 max-md:mt-3 max-md:top-0 max-md:right-0 z-[100] h-10"
+            />
+          </div>
+        )}
       </div>
     </header>
   );

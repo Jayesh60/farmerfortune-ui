@@ -7,6 +7,10 @@ module.exports = {
     extend: {
       colors:{
         "gray": "D2D2D2",
+        "text-gray":"#626262"
+      },
+      backgroundImage:{
+        hero: ""
       }
     },
   },
