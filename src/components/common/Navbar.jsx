@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Metamask from "../assets/logo/metamask.svg";
+import Metamask from "../../assets/logo/metamask.svg";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -14,12 +14,12 @@ const Navbar = () => {
           </Link>
         </div>
         <nav className="font-medium flex flex-wrap items-center text-base gap-x-5 justify-center">
-          <a className=" hover:text-gray-900 cursor-pointer">Explore</a>
-          <a className=" hover:text-gray-900 cursor-pointer">Create Post</a>
-          <a className=" hover:text-gray-900 cursor-pointer">My Post</a>
-          <a className=" hover:text-gray-900 cursor-pointer">
+          <Link to="/explore" className=" hover:text-gray-900 cursor-pointer">Explore</Link>
+          <Link to="/register" className=" hover:text-gray-900 cursor-pointer">Create Post</Link>
+          <Link to="/profile" className=" hover:text-gray-900 cursor-pointer">My Post</Link>
+          <Link to="/transactions" className=" hover:text-gray-900 cursor-pointer">
             Transactions
-          </a>
+          </Link>
           <a className=" hover:text-gray-900 cursor-pointer">About</a>
         </nav>
         {!connectedToMeta ? (
