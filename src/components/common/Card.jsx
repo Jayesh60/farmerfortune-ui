@@ -9,7 +9,7 @@ const Card = ({ img, title, quantity, desc, owner, price }) => {
       <div className="px-2 py-4">
         <div className="flex flex-col ">
           <div className="flex justify-between">
-            <p>title</p>
+            <p>{title}</p>
             <p>Quantity : {quantity}</p>
           </div>
           <div>{desc}</div>
