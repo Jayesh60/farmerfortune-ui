@@ -11,7 +11,7 @@ const Trusted = () => {
         <h1 className="text-6xl font-bold">
           Trusted & <br /> transparent
         </h1>
-        <div className="flex w-[75%] flex-col gap-6">
+        <div className="flex md:w-[75%] flex-col gap-6">
           <p>
             <span className="text-3xl font-bold font-serif">
               Smart Contract </span>

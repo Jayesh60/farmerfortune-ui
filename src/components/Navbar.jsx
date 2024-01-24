@@ -7,21 +7,20 @@ const Navbar = () => {
   const [connectedToMeta, setConnectedToMeta] = useState(false);
 
   return (
-    <header className="text-gray-600 md:px-16 px-6 w-full">
-      <div className="flex justify-between md:p-5 flex-col md:flex-row items-center">
-        <div className="flex items-center text-gray-900 mb-4 md:mb-0">
+      <header className="flex  md:px-16 px-6 text-gray-600  w-full justify-between md:p-5 flex-col md:flex-row items-center">
+        <div className="flex items-center text-gray-900 mb-4 md:mb-0 md:w-36">
           <Link to={'/'} className="ml-3 text-4xl font-bold">
             B.
           </Link>
         </div>
-        <nav className="font-medium flex flex-wrap items-center text-base justify-center">
-          <a className="mr-5 hover:text-gray-900 cursor-pointer">Explore</a>
-          <a className="mr-5 hover:text-gray-900 cursor-pointer">Create Post</a>
-          <a className="mr-5 hover:text-gray-900 cursor-pointer">My Post</a>
-          <a className="mr-5 hover:text-gray-900 cursor-pointer">
+        <nav className="font-medium flex flex-wrap items-center text-base gap-x-5 justify-center">
+          <a className=" hover:text-gray-900 cursor-pointer">Explore</a>
+          <a className=" hover:text-gray-900 cursor-pointer">Create Post</a>
+          <a className=" hover:text-gray-900 cursor-pointer">My Post</a>
+          <a className=" hover:text-gray-900 cursor-pointer">
             Transactions
           </a>
-          <a className="mr-5 hover:text-gray-900 cursor-pointer">About</a>
+          <a className=" hover:text-gray-900 cursor-pointer">About</a>
         </nav>
         {!connectedToMeta ? (
           <div className="flex flex-row-reverse cursor-pointer items-center max-md:pt-5">
@@ -51,7 +50,6 @@ const Navbar = () => {
             />
           </div>
         )}
-      </div>
     </header>
   );
 };
