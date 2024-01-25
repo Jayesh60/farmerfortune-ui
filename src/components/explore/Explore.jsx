@@ -9,11 +9,13 @@ const Explore = () => {
         EXPLORE
       </div>
 
-      <div className='flex flex-wrap gap-5'>
-        <Card img={tomato} title={"Tomato"} desc={''} owner={"Ram Patil"} quantity={"100kg"} price={'0.55Eth'}/>
-        <Card img={tomato} title={"Tomato"} desc={''} owner={"Ram Patil"} quantity={"100kg"} price={'0.55Eth'}/>
-        <Card img={tomato} title={"Tomato"} desc={''} owner={"Ram Patil"} quantity={"100kg"} price={'0.55Eth'}/>
-        
+      <div className='flex flex-wrap justify-center items-center gap-10 py-10'>
+        <Card img={tomato} title={"Tomato"} desc={'Fresh harvested tomatoes from my farm which is in nagpur.TOMATOES ARE VEY RICH IN FIBER AND VITAMINS WHICH ARE ESSENTIAL FOR DAY TO DAY LIFE.'} owner={"Ram Patil"} quantity={"100kg"} price={'0.55Eth'}/>
+        <Card img={tomato} title={"Tomato"} desc={'Fresh harvested tomatoes from my farm which is in nagpur.TOMATOES ARE VEY RICH IN FIBER AND VITAMINS WHICH ARE ESSENTIAL FOR DAY TO DAY LIFE.'} owner={"Ram Patil"} quantity={"100kg"} price={'0.55Eth'}/>
+        <Card img={tomato} title={"Tomato"} desc={'Fresh harvested tomatoes from my farm which is in nagpur.TOMATOES ARE VEY RICH IN FIBER AND VITAMINS WHICH ARE ESSENTIAL FOR DAY TO DAY LIFE.'} owner={"Ram Patil"} quantity={"100kg"} price={'0.55Eth'}/>
+        <Card img={tomato} title={"Tomato"} desc={'Fresh harvested tomatoes from my farm which is in nagpur.TOMATOES ARE VEY RICH IN FIBER AND VITAMINS WHICH ARE ESSENTIAL FOR DAY TO DAY LIFE.'} owner={"Ram Patil"} quantity={"100kg"} price={'0.55Eth'}/>
+        <Card img={tomato} title={"Tomato"} desc={'Fresh harvested tomatoes from my farm which is in nagpur.TOMATOES ARE VEY RICH IN FIBER AND VITAMINS WHICH ARE ESSENTIAL FOR DAY TO DAY LIFE.'} owner={"Ram Patil"} quantity={"100kg"} price={'0.55Eth'}/>
+        <Card img={tomato} title={"Tomato"} desc={'Fresh harvested tomatoes from my farm which is in nagpur.TOMATOES ARE VEY RICH IN FIBER AND VITAMINS WHICH ARE ESSENTIAL FOR DAY TO DAY LIFE.'} owner={"Ram Patil"} quantity={"100kg"} price={'0.55Eth'}/>
       </div>
     </section>
   )

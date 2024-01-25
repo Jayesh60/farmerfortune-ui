@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       colors:{
         "gray": "D2D2D2",
-        "text-gray":"#626262"
+        "text-gray":"#626262",
+        "green":"#4D9F40"
       },
       backgroundImage:{
         hero: ""
