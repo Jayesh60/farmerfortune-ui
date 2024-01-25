@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import QuantityM from "../../assets/svg/minus.svg";
 import QuantityP from "../../assets/svg/plus.svg";
+import Bag from "../../assets/svg/shopping-bag.svg"
 
 const Card = ({ img, title, quantity, desc, owner, price }) => {
   const [quantityState, setQuantityState] = useState(0);
@@ -21,7 +22,7 @@ const Card = ({ img, title, quantity, desc, owner, price }) => {
           </div>
           <div className="flex px-4 py-3 items-center border-b border-[#00000018] justify-between">
             <p>
-              <span>By </span> <span className="font-bold">{owner}</span>
+              <span>By </span> <span className="font-bold text-black">{owner}</span>
             </p>
             <p className="font-bold text-lg text-black">{price}</p>
           </div>
@@ -53,9 +54,10 @@ const Card = ({ img, title, quantity, desc, owner, price }) => {
           </div>
         </div>
         <div className="flex justify-center items-center pt-3">
-          <p className="px-4 cursor-pointer py-2 bg-green text-white w-[80%] rounded-lg flex items-center justify-center font-bold">
+          <div className="px-4 cursor-pointer py-2 bg-green text-white w-[80%] rounded-lg flex gap-2 items-center justify-center font-bold">
+            <img src={Bag} alt="" />
             Buy Now
-          </p>
+          </div>
         </div>
       </div>
     </div>
