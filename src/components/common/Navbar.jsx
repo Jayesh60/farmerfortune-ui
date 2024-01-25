@@ -7,7 +7,7 @@ const Navbar = () => {
   const [connectedToMeta, setConnectedToMeta] = useState(false);
 
   return (
-      <header className="flex  md:px-16 px-6 text-gray-600  w-full justify-between md:p-5 flex-col md:flex-row items-center">
+      <header className="flex md:sticky top-0 z-[100] md:backdrop-blur-3xl md:px-16 px-6 text-gray-600  w-full justify-between md:p-5 flex-col md:flex-row items-center">
         <div className="flex items-center text-gray-900 mb-4 md:mb-0 md:w-36">
           <Link to={'/'} className="ml-3 text-4xl font-bold">
             B.
