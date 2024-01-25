@@ -4,7 +4,7 @@ import Hero from "./components/home/Hero";
 import Trusted from "./components/home/Trusted";
 import Navbar from "./components/common/Navbar";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Register from "./components/register/Register";
+import CreatePost from "./components/register/CreatePost";
 import MyPosts from "./components/profile/MyPosts";
 
 const router = createBrowserRouter([
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
     element: (
       <main>
         <Navbar />
-        <Register />
+        <CreatePost />
       </main>
     ),
     errorElement: <div>Error</div>,
