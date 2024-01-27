@@ -6,6 +6,7 @@ import Navbar from "./components/common/Navbar";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import CreatePost from "./components/register/CreatePost";
 import MyPosts from "./components/profile/MyPosts";
+import Register from "./components/register/Register";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,7 @@ const router = createBrowserRouter([
       <main>
         <Navbar />
         <CreatePost />
+        <Register/>
       </main>
     ),
     errorElement: <div>Error</div>,
