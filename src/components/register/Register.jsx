@@ -10,8 +10,8 @@ const Register = () => {
       <div className="text-5xl md:text-[75px] md:leading-snug font-bold py-10 uppercase">
         Register
       </div>
-      <div className="md:px-20 px-6 flex flex-col md:flex-row justify-center gap-10 w-full h-full py-10">
-        <div className="md:w-[50%] flex flex-col gap-10">
+      <div className="md:px-20 px-6 flex flex-col md:flex-row justify-between gap-10 w-full h-full py-10">
+        <div className="md:w-[50%] flex flex-col justify-between gap-10">
           <div className="md:text-xl max-md:text-center">
           This provide transparent, tamper-resistant, and automated execution of predefined agreements. tamper-resistant, and automated  tamper-resistant, and automated.
           </div>

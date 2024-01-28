@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import CreatePost from "./components/register/CreatePost";
 import MyPosts from "./components/profile/MyPosts";
 import Register from "./components/register/Register";
+import Transactions from "./components/transactions/Transactions";
 
 const router = createBrowserRouter([
   {
@@ -39,7 +40,7 @@ const router = createBrowserRouter([
       <main>
         <Navbar />
         <CreatePost />
-        <Register/>
+        <Register />
       </main>
     ),
     errorElement: <div>Error</div>,
@@ -61,7 +62,7 @@ const router = createBrowserRouter([
     element: (
       <main>
         <Navbar />
-        <MyPosts />
+        <Transactions />
       </main>
     ),
     errorElement: <div>Error</div>,
@@ -69,6 +70,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  
   return (
     <div className="App text-black bg-white">
       <RouterProvider router={router} />

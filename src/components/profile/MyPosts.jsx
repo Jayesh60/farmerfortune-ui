@@ -5,7 +5,7 @@ import tomato from "../../assets/common/tomato.webp";
 const MyPosts = () => {
   return (
     <section className="flex flex-col justify-center items-center">
-      <div className="text-5xl md:text-[75px] md:leading-snug font-bold py-10">
+      <div className="text-5xl md:text-[75px] md:leading-snug font-bold py-10 uppercase">
         My Posts
       </div>
 

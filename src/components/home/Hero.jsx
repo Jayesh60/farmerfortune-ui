@@ -5,8 +5,8 @@ import Marquee from "react-fast-marquee";
 const Hero = () => {
   return (
     <div className="px-6 md:px-16 flex flex-col justify-center items-center text-center max-md:pt-10 h-full py-10">
-      <div className="text-5xl md:text-[75px] md:leading-snug font-bold pb-12">
-        BLOCKCHAIN <br className="md:hidden" /> FOR{" "}
+      <div className="text-5xl md:text-[5.8rem] md:leading-snug font-bold pb-12">
+        BLOCKCHAIN <br className="md:hidden" /> FOR
         <br className="max-md:hidden" /> FARMER EMPOWERMENT
       </div>
       <div className="w-full max-md:pb-10">
