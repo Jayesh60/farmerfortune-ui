@@ -52,13 +52,13 @@ const TransactionsCard = ({ date, amount, from, to }) => {
       </div>
       <div className="flex px-6 py-4 items-center bg-[#E4FFDA5C] justify-between">
         <p className="font-semibold">
-          <span className="font-normal">from </span> {from}
+          <span className="font-normal text-[#00000085]">from </span> {from}
         </p>
         <p>
           <img src={left} alt="" />
         </p>
         <p className="font-semibold">
-          <span className="font-normal">to </span> {to}
+          <span className="font-normal text-[#00000085]">to </span> {to}
         </p>
       </div>
     </div>

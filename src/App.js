@@ -8,6 +8,8 @@ import CreatePost from "./components/register/CreatePost";
 import MyPosts from "./components/profile/MyPosts";
 import Register from "./components/register/Register";
 import Transactions from "./components/transactions/Transactions";
+import AddPosts from "./components/profile/AddPosts";
+import EditPost from "./components/profile/EditPost";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +54,8 @@ const router = createBrowserRouter([
       <main>
         <Navbar />
         <MyPosts />
+        <AddPosts/>
+        <EditPost/>
       </main>
     ),
     errorElement: <div>Error</div>,

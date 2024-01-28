@@ -3,7 +3,7 @@ import QuantityM from "../../assets/svg/minus.svg";
 import QuantityP from "../../assets/svg/plus.svg";
 import Bag from "../../assets/svg/shopping-bag.svg";
 
-const Card = ({ img, title, quantity, desc, owner, price, myposts }) => {
+const Card = ({ img, title, quantity, desc, owner, price, myposts, addProduct }) => {
   const [quantityState, setQuantityState] = useState(0);
 
   return (
@@ -57,7 +57,7 @@ const Card = ({ img, title, quantity, desc, owner, price, myposts }) => {
         <div className="flex justify-center items-center pt-3">
           <div className={`px-4 cursor-pointer py-2 ${myposts ? 'bg-black':'bg-green'}  text-white w-[80%] rounded-lg flex gap-2 items-center justify-center font-bold`}>
             <img src={Bag} alt="" />
-            {!myposts ? <span>Buy Now</span> : <span>See Transactions</span>}
+            {myposts ? <span>See Transactions</span> : addProduct ? <span>Edit Product</span>   : <span>See Transactions</span>}
           </div>
         </div>
       </div>
