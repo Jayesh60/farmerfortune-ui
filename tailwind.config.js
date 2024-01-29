@@ -13,6 +13,9 @@ module.exports = {
       },
       backgroundImage:{
         hero: ""
+      },
+      boxShadow:{
+        'card': "0px 4px 10px 0px #00000040;"
       }
     },
   },

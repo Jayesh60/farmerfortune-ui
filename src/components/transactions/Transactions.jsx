@@ -42,7 +42,7 @@ export default Transactions;
 
 const TransactionsCard = ({ date, amount, from, to }) => {
   return (
-    <div className="md:w-[40%] bg-white shadow-xl rounded-lg h-full">
+    <div className="md:w-[40%] bg-white shadow-card rounded-lg h-full">
       <div className="px-6 flex justify-end w-full font-semibold">
         on {date}
       </div>
